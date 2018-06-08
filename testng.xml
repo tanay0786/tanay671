@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="valid test">
+    <classes>
+      <class name="loginTC.ValidgmailLoginVerification"/>
+   
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="invalid Test">
+    <classes>
+  
+      <class name="loginTC.Invalid_gmail_loginverificationCheck"/>
+    </classes>
+ 
+   </test> <!-- Test --> 
+</suite> <!-- Suite -->

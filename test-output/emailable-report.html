@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">valid test</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,556</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">invalid Test</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,605</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">10</th><th class="num">0</th><th class="num attn">2</th><th class="num">53,161</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">valid test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">loginTC.ValidgmailLoginVerification</td><td><a href="#m0">TC01positiveTest</a></td><td rowspan="1">1511077675435</td><td rowspan="1">18135</td></tr><tr><th colspan="4">valid test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">loginTC.ValidgmailLoginVerification</td><td><a href="#m1">TC01positiveTest</a></td><td rowspan="5">1511077693585</td><td rowspan="5">3</td></tr><tr class="passedeven"><td><a href="#m2">TC01positiveTest</a></td></tr><tr class="passedeven"><td><a href="#m3">TC01positiveTest</a></td></tr><tr class="passedeven"><td><a href="#m4">TC01positiveTest</a></td></tr><tr class="passedeven"><td><a href="#m5">TC01positiveTest</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">invalid Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">loginTC.Invalid_gmail_loginverificationCheck</td><td><a href="#m6">TC02negativeTest</a></td><td rowspan="1">1511077713363</td><td rowspan="1">4892</td></tr><tr><th colspan="4">invalid Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">loginTC.Invalid_gmail_loginverificationCheck</td><td><a href="#m7">TC02negativeTest</a></td><td rowspan="5">1511077703386</td><td rowspan="5">2377</td></tr><tr class="passedeven"><td><a href="#m8">TC02negativeTest</a></td></tr><tr class="passedeven"><td><a href="#m9">TC02negativeTest</a></td></tr><tr class="passedeven"><td><a href="#m10">TC02negativeTest</a></td></tr><tr class="passedeven"><td><a href="#m11">TC02negativeTest</a></td></tr></tbody>
+</table>
+<h2>valid test</h2><h3 id="m0">loginTC.ValidgmailLoginVerification#TC01positiveTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC01_correctcredentialcheck</td><td>arpitselenium</td><td>pass123</td><td>correctcredential</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;:ij&apos;]/div/div&quot;}
+Command duration or timeout: 10.07 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.50.1&apos;, revision: &apos;d7fc91b&apos;, time: &apos;2016-01-29 19:04:49&apos;
+System info: host: &apos;LAPTOP-FNE191SI&apos;, ip: &apos;192.168.0.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=35.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 43eca129-e475-4232-9481-b761f4171176
+*** Element info: {Using=xpath, value=.//*[@id=&apos;:ij&apos;]/div/div}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at subScript.HomeMethods.logincheck(HomeMethods.java:8)
+	at loginTC.ValidgmailLoginVerification.TC01positiveTest(ValidgmailLoginVerification.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;:ij&apos;]/div/div&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.50.1&apos;, revision: &apos;d7fc91b&apos;, time: &apos;2016-01-29 19:04:49&apos;
+System info: host: &apos;LAPTOP-FNE191SI&apos;, ip: &apos;192.168.0.29&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/TANAYC~1/AppData/Local/Temp/anonymous7248014549820219120webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10719)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/TANAYC~1/AppData/Local/Temp/anonymous7248014549820219120webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">loginTC.ValidgmailLoginVerification#TC01positiveTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC02_blankuseridcheck</td><td></td><td>pass123</td><td>blank_userid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">loginTC.ValidgmailLoginVerification#TC01positiveTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC06_wrongPasswordCheck</td><td>arpitselenium</td><td>passw123</td><td>Wrong_Password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">loginTC.ValidgmailLoginVerification#TC01positiveTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC03_specialCharUseridCheck</td><td>$#</td><td>pass123</td><td>specialChar_Userid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">loginTC.ValidgmailLoginVerification#TC01positiveTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC04_InvalidUseridcheck</td><td>arpit p123</td><td>pass123</td><td>Invalid_userid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">loginTC.ValidgmailLoginVerification#TC01positiveTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC05_blankpassword_check</td><td>arpitselenium</td><td></td><td>blank_password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>invalid Test</h2><h3 id="m6">loginTC.Invalid_gmail_loginverificationCheck#TC02negativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC06_wrongPasswordCheck</td><td>arpitselenium</td><td>passw123</td><td>Wrong_Password</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">java.lang.AssertionError: Test Case Failed expected [Enter a password] but found []
+	at loginTC.Invalid_gmail_loginverificationCheck.TC02negativeTest(Invalid_gmail_loginverificationCheck.java:54)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">loginTC.Invalid_gmail_loginverificationCheck#TC02negativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC03_specialCharUseridCheck</td><td>$#</td><td>pass123</td><td>specialChar_Userid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">loginTC.Invalid_gmail_loginverificationCheck#TC02negativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC01_correctcredentialcheck</td><td>arpitselenium</td><td>pass123</td><td>correctcredential</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">loginTC.Invalid_gmail_loginverificationCheck#TC02negativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC05_blankpassword_check</td><td>arpitselenium</td><td></td><td>blank_password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">loginTC.Invalid_gmail_loginverificationCheck#TC02negativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC04_InvalidUseridcheck</td><td>arpit p123</td><td>pass123</td><td>Invalid_userid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">loginTC.Invalid_gmail_loginverificationCheck#TC02negativeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>TC02_blankuseridcheck</td><td></td><td>pass123</td><td>blank_userid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
